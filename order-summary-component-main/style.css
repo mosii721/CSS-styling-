@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: hsl(210, 60%, 98%);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin:3rem auto;
+}
+
+.card{
+    padding: 2.5rem;
+    width: 30rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 1.5rem;
+}
+.icon{
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 14.5rem;
+    border-radius:10px 10px 0 0;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:0 0  10px 10px;
+}
+.down h2{
+    font-size: 1.8rem;
+    color: hsl(223, 47%, 23%);
+}
+.down p{
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+.down a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    width: 90%;
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+}
+.box h3{
+    font-size: 1.2rem;
+    color: hsl(223, 47%, 23%);
+}
+.box h4{
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+}
+.box a{
+    font-size: 1.4rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+.box a:hover{
+    
+}
+.box a:active{
+    text-decoration: none;
+}
+.button{
+    background-color: hsl(245, 75%, 52%);
+    justify-content: center;
+    padding: 1rem;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.icon2{
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 765px) {
+    .main{
+        max-width: 90%;
+    }
+    .card{
+        width: 100%;
+    }
+    .icon{
+        min-height: 9rem;
+    }
+    .down h2{
+        font-size: 1.5rem;
+    }
+    .down p{
+        font-size: 0.9rem;
+    }
+    .box h3,.box h4,.box a{
+        font-size: 0.8rem;
+        
+    }
+    .icon2{
+        width: 2rem;
+        height: 2rem;
+    }
+}
